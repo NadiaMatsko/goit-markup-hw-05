@@ -19,7 +19,7 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: #212121;
-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo-link:hover,
 .logo-link:focus {
@@ -31,7 +31,7 @@ font-size: 14px;
 line-height: 1,14;
 letter-spacing: 0.02em;
 color: #757575;
-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main {
@@ -168,7 +168,7 @@ font-size: 14px;
 line-height: 1,71;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-link:hover,
 .footer-link:focus {
@@ -199,12 +199,13 @@ cursor: pointer;
 border-radius: 4px 4px 4px 4px;
 padding: 6px 22px 6px 22px ;
 border: none;
-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
     color: white;
     background: #2196F3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portf-title {
     font-family: Roboto;
@@ -379,9 +380,6 @@ justify-content: center;
     margin-right: 8px;
     justify-content: center;
 }
-.portfolio-btn:hover 
-{box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
 
 .portfolio-item{
         display: flex;
@@ -399,9 +397,8 @@ justify-content: center;
     margin-left: 30px;
     margin-bottom: 30px;
     border-bottom: 1px solid #ECECEC;
-    position: relative;
-     
-}
+    position: relative;     
+    }
 .portf-name:hover .portf-top-text  {
     transform: translateY(0);
 
@@ -422,7 +419,7 @@ justify-content: center;
    background-color: rgba(33, 150, 243, 0.9);
    padding: 63px 24px;
    height: 100%;
-   transform: translateY(100%);
+   transform: translateY(101%);
 
    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
@@ -439,27 +436,28 @@ justify-content: center;
     flex-wrap: wrap;
     flex-basis:auto;
     justify-content: center;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)}
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 .about-wrap{
     position: relative;
-
+    
   }
 
 .about-top-text{
-    position: absolute;
-    bottom:  0;
-   left: 0;
-   font-weight: 400;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+ position: absolute;
+ font-weight: 400;
  font-style: normal;
    font-size: 14px;
    line-height: 1.14;
     color: #FFFFFF;
-   background-color: rgba(47, 48, 58, 0.8);;
- padding-top: 27px;
- padding-bottom: 27px;
- width: 100%;
-text-align: center;
-  
+   background-color: rgba(47, 48, 58, 0.8);
+   width: 370px;
+   height: 70px;
+   left: 0;
+   bottom: 0;
+      
 }
 .container-footer {width: 1200px;
     padding-right: 15px;
@@ -496,8 +494,7 @@ border-radius: 50%;
 display: flex;
 align-items: center;
 justify-content: center;
-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
-
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-social-link:hover{
     background-color: #2196F3;
@@ -514,6 +511,7 @@ margin-left: 10px;
 }
 .team-social-icons{
     fill: #AFB1B8;
+
 }
 .header-contacts-icon{
     margin-right: 10px;
@@ -578,7 +576,7 @@ margin-left: 10px;
   fill: #AFB1B8 ;
   width: 100%;
   height: 100%;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -588,7 +586,9 @@ margin-left: 10px;
     border-radius: 50%;
   display: flex;
     align-items:center ;
-    justify-content: center;}  
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}  
           
       
     .footer-list{
@@ -693,3 +693,15 @@ width: 100%;
 border-radius: 2px;
 background-color: #2196F3;
 }
+ bottom:  0;
+   left: 0;
+   font-weight: 400;
+ font-style: normal;
+   font-size: 14px;
+   line-height: 1.14;
+    color: #FFFFFF;
+   background-color: rgba(47, 48, 58, 0.8);;
+ padding-top: 27px;
+ padding-bottom: 27px;
+ width: 100%;
+text-align: center;
